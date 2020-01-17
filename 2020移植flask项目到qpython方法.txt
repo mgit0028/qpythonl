@@ -1,0 +1,76 @@
+02.20 11:49
+移植flask项目到qpython方法
+n/projects/webapp/main.py" && exit       <
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 154-152-724
+
+
+http://0.0.0.0:8000/
+
+
+第一步，先用pip 安装flask库
+
+pip  install  flask
+
+
+安装成功后，在移植或创建flask项目，
+
+
+先创建项目文件夹名，
+
+再创建入口文件main.py
+
+
+qpython运行flask 移植webapp项目
+
+移植flask  项目要把index.py  里的代码全部复制粘贴创建到一个入口文件里main.py
+
+一个main.py入口文件，qpython项目运行只认识main.py不认识index.py
+
+入口文件是main.py不是index.py
+
+把移植的flask项目复制到qpython/projects/下的目录里
+
+复制index.py里的所有代码，把代码粘贴到创建的main.py文件里
+
+
+然后进入qpython远行这个移植的项目
+
+
+运行后不能直接跳转到项目，而是先用qpython运行一下项目，在用浏览器访问
+
+
+http://0.0.0.0:8000
+
+
+地址一定要是main.py里定义的地址，
+
+
+注，先用qpython运行一下，再用浏览器访问，才能正常运行项目。
+
+还有就是移植的项目文件夹名称不能改，
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
